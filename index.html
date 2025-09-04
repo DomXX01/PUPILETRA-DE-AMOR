@@ -2,11 +2,11 @@ import React, { useCallback, useRef, useState } from "react";
 
 /**
  * Pupiletra Michi 🐱
- * - Tamaño 20x20
  * - Palabras personalizadas
- * - Contador de movimientos
- * - Revelar solo palabras de la lista
- * - Mensaje final con foto
+ * - Tamaño 20x20
+ * - Fondo de gatitos y colores suaves
+ * - Contador de movimientos + solución imprimible
+ * - Mensaje final con imagen
  */
 
 const DEFAULT_WORDS = [
@@ -229,7 +229,7 @@ export default function App() {
               ¡Muy bien amorcito!🥳 Pero igual sigue siendo bobis jijijij ❤
             </p>
             <div className="mt-4">
-              {/* 👉 Aquí va tu foto en public/amorcito.jpg */}
+              {/* 👉 Tu foto debe estar en public/amorcito.jpg */}
               <img src={process.env.PUBLIC_URL + "/amorcito.jpg"}
                    alt="Imagen de celebración"
                    className="mx-auto rounded-xl shadow-md max-h-64" />
